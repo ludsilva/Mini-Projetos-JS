@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Share Tech', sans-serif;
+}
+
+main{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  background: #ebebeb;
+  width: 400px;
+  height: 600px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  box-shadow: 0 0 10px black;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  font-size: 2.5rem;
+  border-bottom: solid 5px black;
+  margin-bottom: 20px;
+}
+
+.input {
+  display: flex;
+  width: 300px;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.input input {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border:none;
+  outline: 0;
+  font: bold 1.5rem serif;
+  text-align: center;
+}
+
+label {font-size: 1.3em;}
+
+.result_label {margin-top: 0.2em;}
+
+button{
+  width: 300px;
+  height: 40px;
+  font-size: 1.3em;
+  background: #DC4B68;
+  color: #fff;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  width: 300px;
+  height: 150px;
+  border-radius: 5px;
+  font: italic 1.5rem serif;
+  box-shadow: 0px 0px 10px #000;
+  background: #fafafa;
+  color: #003;
+  padding: 20px;
+  box-sizing: border-box;
+  user-select: none;
+}
