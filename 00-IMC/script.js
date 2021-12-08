@@ -1,30 +1,30 @@
-const imc = () => {
+const apresentarImc = () => {
   let nome = document.getElementById('nome').value;
   let altura = parseFloat(document.getElementById('altura').value);
   let peso = parseFloat(document.getElementById('peso').value);
   let resultado = document.getElementById('resultado');
   let mensagem = ``;
 
-  let valueIMC = verificacao(nome, altura, peso);
+  let valueIMC = verificarInput(nome, altura, peso);
   valueIMC != false ? (
     classificacao(valueIMC),
-    mensagem = `${nome}: seu imc está em ${valueIMC}. ${classificacao(valueIMC)}`
-    ) : mensagem = `Digite os campos corretamente!`;
+    mensagem = `${nome}: seu imc está em ${valueIMC}. ${classificarImc(valueIMC)}`
+    ) : mensagem = `Por favor, digite os campos corretamente!`;
 
   resultado.textContent = mensagem;
 }
 
-const verificacao = (nome, altura, peso) => {
+const verificarInput = (nome, altura, peso) => {
   if(nome !== '' && altura !== '' && peso !== ''){
-    return calculaImc(peso, altura); 
+    return calcularImc(peso, altura); 
   } else {
     return false;
   }
 }
 
-const calculaImc = (peso, altura) => (peso / (altura ** 2)).toFixed(2);
+const calcularImc = (peso, altura) => (peso / (altura ** 2)).toFixed(2);
 
-const classificacao = (valueIMC) => {
+const classificarImc = (valueIMC) => {
   let classificacao = ``;
 
   if(valueIMC < 18.5){
@@ -43,4 +43,4 @@ const classificacao = (valueIMC) => {
   return classificacao;
 } 
 
-const calcular = document.getElementById('calcular').addEventListener('click', imc);
+const btnCalcular = document.getElementById('calcular').addEventListener('click', apresentarImc);
