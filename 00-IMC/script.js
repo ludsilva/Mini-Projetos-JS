@@ -7,7 +7,7 @@ const apresentarImc = () => {
 
   let valueIMC = verificarInput(nome, altura, peso);
   valueIMC != false ? (
-    classificacao(valueIMC),
+    classificarImc(valueIMC),
     mensagem = `${nome}: seu imc está em ${valueIMC}. ${classificarImc(valueIMC)}`
     ) : mensagem = `Por favor, digite os campos corretamente!`;
 
