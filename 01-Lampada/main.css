@@ -41,4 +41,5 @@ header, main {
   font: italic 1.1em 'Segoe UI', sans-serif;
   padding: 2em;
   background-color: rgba(235, 17, 9, 0.171);
+  text-shadow: 0 1px rgba(255, 0, 0, 0.411);
 }

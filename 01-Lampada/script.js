@@ -49,6 +49,14 @@
     let message = document.getElementById('message');
     message.style.display = 'block';
     message.textContent = `Oh no! A lâmpada quebrou! \nRecarregue a página.`;
+    unsetMessage();
+  }
+
+  const unsetMessage = () => {setTimeout(clearMessage, 5000);}
+
+  const clearMessage = () => {
+    let message = document.getElementById('message');
+    message.style.display = 'none';
   }
 
   const changeTitle = () => {
