@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+  padding-bottom: 2em;
+}
+
+.mainTitle {
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.button {
+  width: 150px;
+  margin: 0.5em;
+  padding: 1.2em;
+  font-size: 1em;
+  background-color: #a1a1a1;
+  border-radius: 5%;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #c4c3c3;
+}
