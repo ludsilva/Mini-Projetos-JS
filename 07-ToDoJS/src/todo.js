@@ -1,14 +1,5 @@
 'use strict';
 
-/* let database = [
-  {'tarefa': 'Estudar JS', 'status': ''},
-  {'tarefa': 'Limpar a casa', 'status': 'checked'},
-  {'tarefa': 'Ligar para pedreiro', 'status': ''}
-]; */
-
-//entender melhor a ideia do localStorage e do ??
-//para enviar do localstorage é string, para receber é json
-
 const getDatabase = () => JSON.parse(localStorage.getItem('todoList')) ?? [];
 //atualiza o database
 const setDatabase = (database) => localStorage.setItem('todoList', JSON.stringify(database));
