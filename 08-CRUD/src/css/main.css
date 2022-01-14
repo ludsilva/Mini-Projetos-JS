@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+:root{
+  --primary-color: #9D44B5;
+  --secundary-color: #CECCCC;
+  --bg-color: #F2EDEB;
+  --shadow-color: #CCC;
+  --text-color: #FFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'karla', sans-serif;
+  position:relative;
+}
+
+header {
+  background-color: var(--primary-color);
+  height: 90px;
+  text-align: center;
+  line-height: 70px;
+  box-shadow: 0 1px 2px var(--shadow-color);
+}
+
+.main-header {
+  padding-top: 1em;
+}
+
+.header-title {
+  color: black;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+main {
+  margin: 2rem 2rem 6rem;
+  padding: 50px;
+  box-shadow: 2px 2px 10px var(--shadow-color);
+  gap: 20px;
+}
+
+footer {
+  bottom: 0;
+}
+
+.page-footer {
+  width: 100%;
+  text-align: center;
+  background-color: var(--bg-color);
+  padding: 25px;
+}
+
+.page-footer p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #000;
+}
+
+/*Media queries*/
+
+@media (max-width:480px){
+  header{
+      position:fixed;
+      width:100%;
+  }
+  .header-title{
+      font-size: 1.5rem;
+  }
+
+  main{
+      padding: 0;
+      margin: 20px 0 0 0;
+      width:100%;
+      box-shadow: none;
+  }
+}
